@@ -54,7 +54,7 @@ const Home: React.FC = () => {
         {/* Greeting and Bio reverted to left-aligned */}
         <div className="w-full flex flex-col items-start text-left">
           <h1 className="text-4xl md:text-6xl font-medium leading-tight max-w-2xl mb-6 flex flex-wrap items-center gap-x-2 md:gap-x-2">
-            <span className="inline-block min-w-[140px]">
+            <span className="inline-block min-w-[100px] md:min-w-[140px]">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={GREETINGS[greetingIndex]}

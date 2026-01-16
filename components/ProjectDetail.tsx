@@ -140,7 +140,7 @@ const ProjectDetail: React.FC = () => {
     <motion.article 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="max-w-6xl mx-auto px-6 pb-32 pt-12"
+      className="max-w-4xl mx-auto px-6 pb-32 pt-12"
     >
       {/* Header Navigation */}
       <header className="mb-20">

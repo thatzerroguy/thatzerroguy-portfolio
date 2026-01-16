@@ -101,7 +101,7 @@ const Home: React.FC = () => {
                 <Link href={`/projects/${project.id}`} className="inline-block">
                   <h3 
                     className="font-semibold text-lg hover:text-brand-accent transition-colors duration-300 cursor-pointer"
-                    onMouseEnter={() => setHoveredImage(project.previewImage)}
+                    onMouseEnter={() => setHoveredImage(project.previewMedia.url)}
                     onMouseLeave={() => setHoveredImage(null)}
                   >
                     {project.title}
@@ -110,7 +110,7 @@ const Home: React.FC = () => {
               </div>
               <div className="col-span-1 md:col-span-2">
                 <p className="text-neutral-600 leading-relaxed text-sm md:text-base">
-                  {project.description}
+                  {project.overview.content}
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {project.skills.slice(0, 3).map(skill => (

@@ -11,7 +11,7 @@ const About: React.FC = () => {
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-6xl font-medium mb-12"
+          className="text-4xl md:text-6xl font-medium mb-12 font-serif"
         >
           Engineering is the art of <span className="text-brand-accent italic">intentional trade-offs.</span>
         </motion.h1>
@@ -19,7 +19,7 @@ const About: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-32">
         <div className="md:col-span-4">
-          <h2 className="text-xs uppercase tracking-widest font-bold text-neutral-400">Philosophy</h2>
+          <h2 className="text-xs uppercase tracking-widest font-bold text-neutral-400 font-serif">Philosophy</h2>
         </div>
         <div className="md:col-span-8 space-y-8 text-lg md:text-xl text-neutral-700 leading-relaxed">
           <p>
@@ -33,12 +33,12 @@ const About: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-32">
         <div className="md:col-span-4">
-          <h2 className="text-xs uppercase tracking-widest font-bold text-neutral-400">Core Stack</h2>
+          <h2 className="text-xs uppercase tracking-widest font-bold text-neutral-400 font-serif">Core Stack</h2>
         </div>
         <div className="md:col-span-8">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             <div>
-              <h4 className="font-bold text-sm mb-4">Languages</h4>
+              <h4 className="font-bold text-sm mb-4 font-serif">Languages</h4>
               <ul className="text-neutral-600 space-y-2 text-sm">
                 <li>Go (Golang)</li>
                 <li>Python</li>
@@ -47,7 +47,7 @@ const About: React.FC = () => {
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-sm mb-4">Backend</h4>
+              <h4 className="font-bold text-sm mb-4 font-serif">Backend</h4>
               <ul className="text-neutral-600 space-y-2 text-sm">
                 <li>PostgreSQL</li>
                 <li>Redis</li>
@@ -56,7 +56,7 @@ const About: React.FC = () => {
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-sm mb-4">DevOps</h4>
+              <h4 className="font-bold text-sm mb-4 font-serif">DevOps</h4>
               <ul className="text-neutral-600 space-y-2 text-sm">
                 <li>Kubernetes</li>
                 <li>Terraform</li>

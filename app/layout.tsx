@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Poppins, Manrope } from 'next/font/google';
+import { Poppins, Source_Serif_4 } from 'next/font/google';
 import './globals.css';
 import Layout from '../components/Layout';
 
@@ -10,12 +10,13 @@ const poppins = Poppins({
   variable: '--font-poppins',
 });
 
-const manrope = Manrope({
-  weight: ['200', '300', '400', '500', '600', '700', '800'],
+const sourceSerif = Source_Serif_4({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-manrope',
+  variable: '--font-serif',
 });
+
+import CustomCursor from '../components/CustomCursor';
 
 export const metadata: Metadata = {
   title: 'Nduka Ugochukwu | Backend & DevOps Engineer',
@@ -28,8 +29,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${poppins.variable} ${manrope.variable}`}>
+    <html lang="en" className={`${poppins.variable} ${sourceSerif.variable}`}>
       <body>
+        <CustomCursor />
         <Layout>{children}</Layout>
       </body>
     </html>

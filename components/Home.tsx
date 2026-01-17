@@ -53,7 +53,7 @@ const Home: React.FC = () => {
         
         {/* Greeting and Bio reverted to left-aligned */}
         <div className="w-full flex flex-col items-start text-left">
-          <h1 className="text-4xl md:text-6xl font-medium leading-tight max-w-2xl mb-6 flex flex-wrap items-center gap-x-2 md:gap-x-2">
+          <h1 className="text-4xl md:text-6xl font-medium leading-tight max-w-2xl mb-6 flex flex-wrap items-center gap-x-2 md:gap-x-2 font-serif">
             <span className="inline-block min-w-[100px] md:min-w-[140px]">
               <AnimatePresence mode="wait">
                 <motion.span
@@ -93,7 +93,7 @@ const Home: React.FC = () => {
       </header>
 
       <section className="mb-32">
-        <h2 className="text-xs uppercase tracking-[0.2em] font-bold text-neutral-400 mb-12 border-b border-brand-border pb-4">Selected Work</h2>
+        <h2 className="text-xs uppercase tracking-[0.2em] font-bold text-neutral-400 mb-12 border-b border-brand-border pb-4 font-serif">Selected Work</h2>
         <div className="space-y-16">
           {PROJECTS.map((project) => (
             <div key={project.id} className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-12 items-start">
@@ -125,17 +125,17 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section className="mb-32">
-        <h2 className="text-xs uppercase tracking-[0.2em] font-bold text-neutral-400 mb-12 border-b border-brand-border pb-4">Experience</h2>
+    <section className="mb-32">
+        <h2 className="text-xs uppercase tracking-[0.2em] font-bold text-neutral-400 mb-12 border-b border-brand-border pb-4 font-serif">Experience</h2>
         <div className="space-y-16">
           {EXPERIENCE.map((exp, idx) => (
             <div key={idx} className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-12">
               <div className="col-span-1">
-                <h4 className="font-semibold text-lg">{exp.company}</h4>
-                <p className="text-xs uppercase tracking-tighter text-neutral-400 mt-1">{exp.period}</p>
+                <h4 className="font-semibold text-lg font-serif">{exp.company}</h4>
+                <p className="text-xs uppercase tracking-tighter text-neutral-400 mt-1 font-serif">{exp.period}</p>
               </div>
               <div className="col-span-1 md:col-span-2">
-                <h5 className="font-medium text-neutral-700 italic mb-2">{exp.role}</h5>
+                <h5 className="font-medium text-neutral-700 italic mb-2 font-serif">{exp.role}</h5>
                 <p className="text-neutral-600 leading-relaxed text-sm md:text-base">
                   {exp.description}
                 </p>
@@ -144,6 +144,18 @@ const Home: React.FC = () => {
           ))}
         </div>
       </section>
+
+      {/* New Footer Tagline */}
+      <footer className="mb-24 pt-24 border-t border-brand-border">
+         <motion.h1 
+           initial={{ opacity: 0, y: 20 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           viewport={{ once: true }}
+           className="text-4xl md:text-6xl font-medium font-serif"
+         >
+           I engineer experiences, <span className="text-brand-accent italic">worth reliving for.</span>
+         </motion.h1>
+      </footer>
 
       <HoverPreview 
         image={hoveredImage} 

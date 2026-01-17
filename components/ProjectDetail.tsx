@@ -9,13 +9,13 @@ import Mermaid from './Mermaid';
 import { ProjectSection, FlowSection, ProjectMedia } from '../types';
 
 const SectionHeader = ({ title }: { title: string }) => (
-  <h2 className="text-xs uppercase tracking-widest font-bold text-neutral-400 font-manrope mb-4">
+  <h2 className="text-xs uppercase tracking-widest font-bold text-neutral-400 font-serif mb-4">
     {title}
   </h2>
 );
 
 const SectionTitle = ({ title }: { title: string }) => (
-  <h3 className="text-lg font-bold mb-4 font-manrope text-neutral-800">
+  <h3 className="text-lg font-bold mb-4 font-serif text-neutral-800">
     {title}
   </h3>
 );
@@ -105,7 +105,7 @@ const FlowLayout = ({ data }: { data: FlowSection }) => {
 
             {/* Text on the Right */}
             <div className="flex flex-col justify-center h-full py-4">
-              <h4 className="text-lg font-bold font-manrope mb-4 text-neutral-800">{diagram.title}</h4>
+              <h4 className="text-lg font-bold font-serif mb-4 text-neutral-800">{diagram.title}</h4>
               {diagram.description && (
                 <p className="text-sm md:text-base text-neutral-600 font-poppins leading-relaxed">
                   {diagram.description}
@@ -130,7 +130,7 @@ const ProjectDetail: React.FC = () => {
   if (!project) {
     return (
       <div className="max-w-4xl mx-auto px-6 py-24 text-center">
-        <h1 className="text-2xl font-bold font-manrope">Project Not Found</h1>
+        <h1 className="text-2xl font-bold font-serif">Project Not Found</h1>
         <Link href="/" className="text-brand-accent mt-4 inline-block font-poppins">Go Home</Link>
       </div>
     );
@@ -144,30 +144,30 @@ const ProjectDetail: React.FC = () => {
     >
       {/* Header Navigation */}
       <header className="mb-20">
-        <Link href="/" className="inline-flex items-center gap-2 text-xs uppercase font-bold text-neutral-400 hover:text-brand-accent mb-12 transition-colors font-manrope">
+        <Link href="/" className="inline-flex items-center gap-2 text-xs uppercase font-bold text-neutral-400 hover:text-brand-accent mb-12 transition-colors font-serif">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           Back to work
         </Link>
-        <h1 className="text-4xl md:text-6xl font-medium mb-12 leading-tight font-manrope">
+        <h1 className="text-4xl md:text-6xl font-medium mb-12 leading-tight font-serif">
           {project.title}
         </h1>
         
         {/* Metadata Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-10 border-y border-brand-border font-poppins">
           <div>
-            <h4 className="text-[10px] uppercase tracking-widest font-bold text-neutral-400 mb-2 font-manrope">Role</h4>
+            <h4 className="text-[10px] uppercase tracking-widest font-bold text-neutral-400 mb-2 font-serif">Role</h4>
             <p className="text-sm font-medium">{project.role}</p>
           </div>
           <div>
-            <h4 className="text-[10px] uppercase tracking-widest font-bold text-neutral-400 mb-2 font-manrope">Timeline</h4>
+            <h4 className="text-[10px] uppercase tracking-widest font-bold text-neutral-400 mb-2 font-serif">Timeline</h4>
             <p className="text-sm font-medium">{project.year}</p>
           </div>
           <div>
-            <h4 className="text-[10px] uppercase tracking-widest font-bold text-neutral-400 mb-2 font-manrope">Team</h4>
+            <h4 className="text-[10px] uppercase tracking-widest font-bold text-neutral-400 mb-2 font-serif">Team</h4>
             <p className="text-sm font-medium">{project.teamSize}</p>
           </div>
           <div>
-            <h4 className="text-[10px] uppercase tracking-widest font-bold text-neutral-400 mb-2 font-manrope">Tech Stack</h4>
+            <h4 className="text-[10px] uppercase tracking-widest font-bold text-neutral-400 mb-2 font-serif">Tech Stack</h4>
             <p className="text-sm font-medium">{project.skills.join(', ')}</p>
           </div>
         </div>
@@ -204,7 +204,7 @@ const ProjectDetail: React.FC = () => {
 
       {/* Footer Navigation */}
       <div className="flex justify-center pt-24 border-t border-brand-border mt-32">
-         <Link href="/" className="text-2xl font-medium hover:text-brand-accent transition-colors font-manrope">
+         <Link href="/" className="text-2xl font-medium hover:text-brand-accent transition-colors font-serif">
            See more work
          </Link>
       </div>

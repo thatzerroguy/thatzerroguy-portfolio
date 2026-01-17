@@ -151,7 +151,7 @@ const Home: React.FC = () => {
            initial={{ opacity: 0, y: 20 }}
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
-           className="text-4xl md:text-6xl font-medium font-serif"
+           className="text-5xl md:text-7xl font-medium font-serif"
          >
            I engineer experiences, <span className="text-brand-accent italic">worth reliving for.</span>
          </motion.h1>

@@ -12,7 +12,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
   return (
     <div className="min-h-screen flex flex-col font-sans">
-      <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-6 flex justify-between items-center mix-blend-difference text-white">
+      <nav className="fixed top-0 left-0 right-0 z-50 px-20 py-6 flex justify-between items-center mix-blend-difference text-white">
         <Link href="/" className="text-sm font-medium tracking-tight relative z-50">
           Nduka  Ugochukwu
         </Link>

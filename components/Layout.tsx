@@ -65,7 +65,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         </div>
       </div>
 
-      <main className="flex-grow pt-24">
+      <main className="grow pt-24">
         {children}
       </main>
 
@@ -74,9 +74,10 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           © {new Date().getFullYear()} Nduka Ugochukwu. Designed & Coded with care.
         </div>
         <div className="flex gap-6">
-          <a href="#" className="text-xs uppercase font-bold hover:text-brand-accent transition-colors">LinkedIn</a>
-          <a href="#" className="text-xs uppercase font-bold hover:text-brand-accent transition-colors">GitHub</a>
-          <a href="#" className="text-xs uppercase font-bold hover:text-brand-accent transition-colors">Twitter</a>
+          <a href="https://www.linkedin.com/in/thatzerroguy?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B1Mh945HqSSuvqmDPRTgxgw%3D%3D" className="text-xs uppercase font-bold hover:text-brand-accent transition-colors">LinkedIn</a>
+          <a href="https://github.com/thatzerroguy" className="text-xs uppercase font-bold hover:text-brand-accent transition-colors">GitHub</a>
+          <a href="https://x.com/heythatzerroguy" className="text-xs uppercase font-bold hover:text-brand-accent transition-colors">Twitter</a>
+          <a href="https://instagram.com/thatzerroguy" className="text-xs uppercase font-bold hover:text-brand-accent transition-colors">Instagram</a>
         </div>
       </footer>
     </div>

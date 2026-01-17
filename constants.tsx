@@ -198,21 +198,27 @@ export const PROJECTS: Project[] = [
 
 export const EXPERIENCE: Experience[] = [
   {
-    company: 'Northen Tech',
-    role: 'Senior Backend Engineer',
-    period: '2023 - Present',
-    description: 'Leading the development of core treasury automation engines. Scaling systems to handle multi-billion dollar transactions.'
+    company: 'IDCODE Nigeria',
+    role: 'Backend Engineer',
+    period: '2025 - Present',
+    description: 'Engineering the development and maintenance of event management and identity management systems. Scaling systems to thousands of users and ensuring high availability.'
   },
   {
     company: 'Woost App',
     role: 'Backend Engineer',
-    period: '2021 - 2023',
-    description: 'Optimized real-time payment processing flows and integrated with multiple European banking APIs.'
+    period: 'Jan - Jul 2025',
+    description: 'Engineered and developed the backend infrastructure for Woost App, an AI-powered system to monitoring and detecting PCOS in women.'
   },
   {
     company: 'Haqqman Technologies',
     role: 'Intern Mobile App Developer',
-    period: '2019 - 2021',
-    description: 'Automated infrastructure provisioning and implemented zero-trust security policies for sensitive patient data.'
+    period: 'Aug - Nov 2024',
+    description: 'Focused on developing and maintaining Haqqman Technologies\' mobile apps, including EstatePro, an estate management system.'
+  },
+  {
+    company: 'National Centre for Artificial Intelligence and Robotics',
+    role: 'Intern Machine Learning Engineer',
+    period: 'Aug - Nov 2023',
+    description: 'Developed machine learning models to be used in various sectors in Nigeria, including healthcare, school management, etc.'
   }
 ];

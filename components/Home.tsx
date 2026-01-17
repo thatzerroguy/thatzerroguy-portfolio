@@ -84,10 +84,10 @@ const Home: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-xl md:text-2xl text-neutral-600 leading-relaxed max-w-2xl"
+            className="text-xl md:text-xl text-neutral-600 leading-relaxed max-w-3xl"
           >
-            Backend & DevOps Engineer. Designing resilient, distributed systems at <span className="underline decoration-brand-border underline-offset-8">Northen</span>. 
-            Focused on high-concurrency architecture and zero-trust infrastructure.
+            Nigeria based Backend & DevOps Engineer. Currently designing and engineering dependable systems at  <span className="underline decoration-brand-border underline-offset-8">IDCODE Nigeria</span> and the infrastructure that supports them. 
+            I care about how systems behave under stress, change, and scale.
           </motion.p>
         </div>
       </header>

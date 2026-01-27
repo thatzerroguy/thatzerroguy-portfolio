@@ -38,7 +38,7 @@ const Home: React.FC = () => {
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-brand-secondary overflow-hidden border border-brand-border shadow-sm"
+            className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-brand-secondary overflow-hidden border border-brand-border"
           >
             <img 
               src={PERSONAL_IMAGE} 

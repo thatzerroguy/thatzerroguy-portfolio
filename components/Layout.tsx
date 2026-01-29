@@ -21,7 +21,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <div className="hidden md:flex gap-8">
           <Link href="/" className="text-xs uppercase tracking-widest font-semibold hover:opacity-70 transition-opacity">Work</Link>
           <Link href="/about" className="text-xs uppercase tracking-widest font-semibold hover:opacity-70 transition-opacity">About</Link>
-          <a href="https://linkedin.com/thatzerroguy" target="_blank" className="text-xs uppercase tracking-widest font-semibold hover:opacity-70 transition-opacity">Contact</a>
+          <a href="www.linkedin.com/in/ugochukwu06" target="_blank" className="text-xs uppercase tracking-widest font-semibold hover:opacity-70 transition-opacity">Contact</a>
         </div>
 
         {/* Mobile Menu Button */}

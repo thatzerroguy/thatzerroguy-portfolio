@@ -10,6 +10,7 @@ import HoverPreview from './HoverPreview';
 const GREETINGS = ["Hello", "Hallo", "Hola", "Ciao", "Salut", "Olá", "Nǐ hǎo"];
 const INSTAGRAM_URL = "https://instagram.com/thatzerroguy"; // Placeholder for actual handle
 const PERSONAL_IMAGE = "/thatzerroguy.jpeg";
+const PROFILE_IMAGE = "/zerro.png";
 
 const Home: React.FC = () => {
   const [hoveredImage, setHoveredImage] = useState<string | null>(null);
@@ -74,7 +75,7 @@ const Home: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-brand-accent transition-colors duration-300 decoration-brand-accent underline underline-offset-8 decoration-2 cursor-pointer"
-              onMouseEnter={() => setHoveredImage(PERSONAL_IMAGE)}
+              onMouseEnter={() => setHoveredImage(PROFILE_IMAGE)}
               onMouseLeave={() => setHoveredImage(null)}
             >
               Ugo!

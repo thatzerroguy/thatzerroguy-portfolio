@@ -21,7 +21,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <div className="hidden md:flex gap-8">
           <Link href="/" className="text-xs uppercase tracking-widest font-semibold hover:opacity-70 transition-opacity">Work</Link>
           <Link href="/about" className="text-xs uppercase tracking-widest font-semibold hover:opacity-70 transition-opacity">About</Link>
-          <a href="www.linkedin.com/in/ugochukwu06" target="_blank" className="text-xs uppercase tracking-widest font-semibold hover:opacity-70 transition-opacity">Contact</a>
+          <a href="https://linkedin.com/in/ugochukwu06" target="_blank" className="text-xs uppercase tracking-widest font-semibold hover:opacity-70 transition-opacity">Contact</a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -74,10 +74,10 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           © {new Date().getFullYear()} Nduka Ugochukwu. Designed & Coded with care.
         </div>
         <div className="flex gap-6">
-          <a href="www.linkedin.com/in/ugochukwu06" className="text-xs uppercase font-bold hover:text-brand-accent transition-colors">LinkedIn</a>
-          <a href="https://github.com/thatzerroguy" className="text-xs uppercase font-bold hover:text-brand-accent transition-colors">GitHub</a>
-          <a href="https://x.com/heythatzerroguy" className="text-xs uppercase font-bold hover:text-brand-accent transition-colors">Twitter</a>
-          <a href="https://instagram.com/thatzerroguy" className="text-xs uppercase font-bold hover:text-brand-accent transition-colors">Instagram</a>
+          <a href="https://linkedin.com/in/ugochukwu06" target="_blank" className="text-xs uppercase font-bold hover:text-brand-accent transition-colors">LinkedIn</a>
+          <a href="https://github.com/thatzerroguy" target="_blank" className="text-xs uppercase font-bold hover:text-brand-accent transition-colors">GitHub</a>
+          <a href="https://x.com/heythatzerroguy" target="_blank" className="text-xs uppercase font-bold hover:text-brand-accent transition-colors">Twitter</a>
+          <a href="https://instagram.com/thatzerroguy" target="_blank" className="text-xs uppercase font-bold hover:text-brand-accent transition-colors">Instagram</a>
         </div>
       </footer>
     </div>

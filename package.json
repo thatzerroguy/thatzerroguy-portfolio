@@ -29,6 +29,9 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "sharp"
-    ]
+    ],
+    "overrides": {
+      "baseline-browser-mapping": "2.11.15"
+    }
   }
 }
